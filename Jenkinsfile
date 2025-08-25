@@ -33,8 +33,7 @@ pipeline {
             steps {
                 sh """
                     docker rm -f devops-project || true 
-                    docker run -d -p 80:80 devops-project ${DOCKER_IMAGE
-                    }
+                    docker run -d -p 80:80 devops-project ${DOCKER_IMAGE}
                 """
             }
         }
